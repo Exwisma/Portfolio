@@ -67,6 +67,18 @@ const token = "7683924388:AAHCKWWboLK2gDus7-70Jn4S020jBAwlzR8";
     const num = document.getElementById("number").value;
     const telegram = document.getElementById("telegram").value;
      
+if (!name || !telegram || !message || !num || !email) {
+  const errorMessage = document.getElementById("error-message");
+  errorMessage.textContent = "❌ Пожалуйста, заполните все поля формы.";
+  errorMessage.style.display = "block";
+  
+  setTimeout(() => {
+    errorMessage.style.display = "none";
+  }, 3000);
+  return;
+}
+
+
    const text =
   ` 📩 *Новое сообщение с Портфолио!*\n\n
    👤 *Имя:* ${name}\n
