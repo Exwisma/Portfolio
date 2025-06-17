@@ -42,15 +42,65 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend-разработчик ', 'Ютубер', 'Блоггер',],
+    strings: [ 'Frontend-разработчик',],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 })
+
+const token = "7683924388:AAHCKWWboLK2gDus7-70Jn4S020jBAwlzR8"; // 🔐 Никогда не публикуй токен на сайте!
+  const chatId = "758234437"; // Нужно узнать свой ID
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const num = document.getElementById("number").value;
+    const telegram = document.getElementById("telegram").value;
+     
+   const text =
+  ` 📩 *Новое сообщение с Портфолио!*\n\n
+   👤 *Имя:* ${name}\n
+   📧 *Email:* ${email}\n
+   📱 *Телефон:* ${num}\n
+   💬 *Сообщение:* ${message}\n
+   💬 *Telegram:* @${telegram}`;
+
+
+    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: text
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+        const successMessage = document.getElementById("success-message");
+    successMessage.style.display = "block";
+    setTimeout(() => {
+      successMessage.style.display = "none";
+    }, 3000);
+
+      form.reset();
+    })
+    .catch(err => {
+      alert("Ошибка отправки!");
+      console.error(err);
+    });
+  });
+  const themeToggle = document.getElementById("theme-toggle");
+
+
