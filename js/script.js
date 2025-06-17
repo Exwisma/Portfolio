@@ -69,8 +69,7 @@ const token = "7683924388:AAHCKWWboLK2gDus7-70Jn4S020jBAwlzR8";
      
 if (!name || !telegram || !message || !num || !email) {
   const errorMessage = document.getElementById("error-message");
-  errorMessage.textContent = "❌ Пожалуйста, заполните все поля формы.";
-  errorMessage.style.display = "block";
+  errorMessage.style.display = "flex";
   
   setTimeout(() => {
     errorMessage.style.display = "none";
