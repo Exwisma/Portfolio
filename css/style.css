@@ -90,7 +90,7 @@ section {
 }
 
 .home-img img {
-    width: 300px;
+    width: 450px;
     border-radius: 30px;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -128,6 +128,8 @@ span {
 
 .home-content p {
     font-size: 1.6em;
+   width: 700px;
+   margin-right: 100px;
 }
 
 .social-media a {
