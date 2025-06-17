@@ -55,8 +55,8 @@ const typed = new Typed('.multiple-text', {
     loop: true
 })
 
-const token = "7683924388:AAHCKWWboLK2gDus7-70Jn4S020jBAwlzR8"; // 🔐 Никогда не публикуй токен на сайте!
-  const chatId = "758234437"; // Нужно узнать свой ID
+const token = "7683924388:AAHCKWWboLK2gDus7-70Jn4S020jBAwlzR8"; 
+  const chatId = "758234437";
   const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", function (e) {
