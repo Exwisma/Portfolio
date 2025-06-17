@@ -91,6 +91,7 @@ section {
 
 .home-img img {
     width: 450px;
+    margin-left: 10px;
     border-radius: 30px;
     animation: floatImage 4s ease-in-out infinite;
 }
