@@ -203,8 +203,12 @@
     </footer>
 
     
-    <div id="success-message" style="
-  display: none;
+    <div id="success-message">✅ Сообщение отправлено!</div>
+    <div id="error-message"></div>
+
+<style>
+  #success-message {
+     display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -216,26 +220,50 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   z-index: 9999;
+  }
 
-">
-  ✅ Сообщение отправлено!
-</div>
-<div id="error-message" style="
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #f44336;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  z-index: 9999;
-">
+  @media (max-width: 768px) {
+    #success-message {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      width: calc(100% - 40px);
+      max-width: 90%;
+      text-align: center;
+    }
+  }
+</style>
 
-</div>
+
+
+<style>
+  #error-message {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f44336;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    z-index: 9999;
+  }
+
+  @media (max-width: 768px) {
+    #error-message {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      width: calc(100% - 40px);
+      max-width: 90%;
+      text-align: center;
+    }
+  }
+</style>
+
 
 <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
