@@ -74,9 +74,8 @@ section {
 }
 .a1{
     color: var(--text-color);
-    margin-left: 550px;
     transition: .3s;
-    font-size: 30px;
+    font-size: 50px;
 }
 .a1:hover,
 .a1.active {
