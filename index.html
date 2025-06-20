@@ -88,7 +88,11 @@
             opacity: 1;
             transform: translateX(-50%) translateY(0);
             }
-
+            @media (hover: none) and (pointer: coarse) {
+            .tooltip .tooltip-text {
+                display: none !important;
+            }
+            }
             </style>
             
             <!-- <a href="#" class="btn">Скачать CV</a> -->
