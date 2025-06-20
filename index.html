@@ -34,17 +34,63 @@
             <h1>Исмаил </h1>
             <h3>И я <span class="multiple-text"></span></h3>
             <p>Я являюсь фронтенд-разработчиком, cоздаю современные и удобные веб-приложения с адаптивным дизайном и чистым, структурированным кодом. Имею опыт работы над проектами разного уровня сложности — от лендингов до полноценных интернет-магазинов.<p>
-            <div class="social-media">
-                <a target="_blank" href="https://t.me/Exwisma"><i class="bx bxl-telegram"></i></a>
-                <a target="_blank" href="https://github.com/Exwisma"><i class="bx bxl-github"></i></a>
-                <a target="_blank" href="https://www.instagram.com/exwisma123?igsh=MWsxemI3Y3RlcXlsYQ%3D%3D&utm_source=qr"><i class="bx bxl-instagram-alt"></i></a>
+                    <address class="social-media">
+                    <a class="tooltip" aria-label="Мой Telegram" target="_blank" href="https://t.me/Exwisma">
+                    <i class="bx bxl-telegram"></i>
+                    <span class="tooltip-text" >Мой Telegram</span>
+                    </a>
+                   
+                    <a class="tooltip" aria-label="Мой Github"  target="_blank" href="https://github.com/Exwisma">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip-text" >Мой Github</span>
+                    </a>
+
+                    <a class="tooltip" aria-label="Мой Instagram"  target="_blank" href="https://www.instagram.com/exwisma123?igsh=MWsxemI3Y3RlcXlsYQ%3D%3D&utm_source=qr">
+                    <i class="bx bxl-instagram-alt"></i>
+                    <span class="tooltip-text" >Мой Instagram</span>
+                    </a>
                 <!-- 
                     <a target="_blank" href="https://www.linkedin.com/in/%D0%B4%D0%B6%D0%B0%D0%B2%D0%BE%D1%85%D0%B8%D1%80-%D0%B0%D0%BD%D0%BD%D0%B0%D0%BA%D1%83%D0%BB%D0%BE%D0%B2-54130a261/">
                     <i class="bx bxl-linkedin"></i>
                     </a> 
                     -->
 
-            </div>
+            </address>
+            <style>
+           .tooltip {
+            position: relative;
+            display: inline-block;
+            }
+
+            .tooltip .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            width: max-content;
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 140%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            transition: 0.5s ease;
+            font-size: 14px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            white-space: nowrap;
+            pointer-events: none;
+             font-style: normal;
+            }
+
+            .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            }
+
+            </style>
+            
             <!-- <a href="#" class="btn">Скачать CV</a> -->
         </div>
 
