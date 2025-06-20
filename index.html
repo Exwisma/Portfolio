@@ -246,12 +246,35 @@
     </section>
 
     <footer class="footer" id="footer">
-        <div class="footer-text">
+        <div class="footer-content"> 
+            <div class="footer-text">
             <p>Copyright &copy; 2025 by Ismail Abbyasov | All Rights Reserved.</p>
         </div>
 
+<address class="social-media">
+
+  
+                     <a class="tooltip" aria-label="Мой Telegram" target="_blank" href="https://t.me/Exwisma">
+                    <i class="bx bxl-telegram"></i>
+                    <span class="tooltip-text" >Мой Telegram</span>
+                    </a>
+  
+                      <a class="tooltip" aria-label="Мой Github"  target="_blank" href="https://github.com/Exwisma">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip-text" >Мой Github</span>
+                    </a>
+  
+                      <a class="tooltip" aria-label="Мой Instagram"  target="_blank" href="https://www.instagram.com/exwisma123?igsh=MWsxemI3Y3RlcXlsYQ%3D%3D&utm_source=qr">
+                    <i class="bx bxl-instagram-alt"></i>
+                    <span class="tooltip-text" >Мой Instagram</span>
+                    </a>
+
+
+                    </address>
+
         <div class="footer-iconTop">
             <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
         </div>
     </footer>
 
@@ -275,6 +298,21 @@
   z-index: 9999;
   }
 
+   .social-media a{
+              margin: 3rem 0.75rem 3rem 0.75rem;
+            }
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1222.800px;
+}
+
+  @media (max-width: 450px) {
+    
+.social-media a{
+     margin: 2rem 0.75rem 2rem 0.75rem;
+}}
   @media (max-width: 768px) {
     #success-message {
       left: 50%;
@@ -285,6 +323,17 @@
       text-align: center;
     }
   }
+  @media  (max-width: 635px){
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer-text{
+    text-align: center;
+}
+}
 </style>
 
 

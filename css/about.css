@@ -147,7 +147,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem 0.75rem 3rem 0.75rem;
     transition: .5s ease;
 }
 
@@ -155,6 +155,11 @@ span {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+.social-media{
+    display: flex;
+justify-content: center;
 }
 
 
@@ -190,7 +195,12 @@ span {
     margin: 2rem 0 3rem;
 }
 
-
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1222.800px;
+}
 
 .footer {
     display: flex;
@@ -334,6 +344,9 @@ span {
     html {
         font-size: 50%;
     }
+.social-media a{
+     margin: 2rem 0.75rem 2rem 0.75rem;
+}
 
     .contact form .input-box input {
         width: 100%;
@@ -358,4 +371,16 @@ span {
         margin-top: 2rem;
     }
 }
+@media  (max-width: 635px){
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer-text{
+    text-align: center;
+}
+}
+    
 
