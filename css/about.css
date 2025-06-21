@@ -370,6 +370,18 @@ justify-content: center;
     }
 }
 
+@media  (max-width: 635px){
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer-text{
+    text-align: center;
+}
+}
+
 @media (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
@@ -406,17 +418,5 @@ justify-content: center;
         text-align: center;
         margin-top: 2rem;
     }
-}
-@media  (max-width: 635px){
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.footer-text{
-    text-align: center;
-}
-}
-    
+}  
 
